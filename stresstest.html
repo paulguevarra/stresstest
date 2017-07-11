@@ -5,54 +5,57 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Transportation survey</title>
+    <title>StressTest</title>
   </head>
   <body>
-    <h1>Transportation Survey</h1>
-    <p>Please take a moment to fill out our transportation survey</p>
+    <h1>Stress Test Survey</h1>
+    <p>Please take a moment to fill out our stress survey</p>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>Stress Survey</h2>
       </div>
+      <h3>For the following questions, please check all that apply.</h3>
 <!--first form-->
       <div>
-        <form id="transportation_survey">
+        <form id="survey">
           <div class="form-group">
-            <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-            <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-            <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-            <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-            <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-            <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-            <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-            <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-            <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+            <div class ="well">
+              <p>Have you experienced any of these early symptoms of stress?</p>
+              <input type="checkbox" name="early-warnings" value="stomach"> Upset stomach.<br>
+              <input type="checkbox" name="early-warnings" value="memory">Memory problems.<br>
+              <input type="checkbox" name="early-warnings" value="fatigue">Fatigue.<br>
+              <input type="checkbox" name="early-warnings" value="mouth">Dry mouth.<br>
+              <input type="checkbox" name="early-warnings" value="headache">Headaches.<br>
+            </div>
           </div>
+          <br>
+          <div class="form-group" id= "quest2">
+            <div class="well">
+              <p>Have you experienced any of these more advanced stress symptoms?</p>
+              <input type="checkbox" name="health-symptoms" value="4">High blood pressure .<br>
+              <input type="checkbox" name="health-symptoms" value="4">Anxiety.<br>
+              <input type="checkbox" name="health-symptoms" value="4">Alzheimers.<br>
+              <input type="checkbox" name="health-symptoms" value="4">Diabetes.<br>
+              <input type="checkbox" name="health-symptoms" value="4">Depression.<br>
+            </div>
+          </div>
+          <br>
+          <div class="form-group"  id= "quest3">
+            <div class="well">
+              <p>Do you participate in any of these stress reducing activities?</p>
+              <input type="checkbox" name="stress mgmt" value="-1"> Meditation.<br>
+              <input type="checkbox" name="stress mgmt" value="-1">Excercise.<br>
+              <input type="checkbox" name="stress mgmt" value="-1">Healthy eating habbits.<br>
+              <input type="checkbox" name="stress mgmt" value="-1">Breathing excercises.<br>
+            </div>
+          </div>
+
           <button class="btn1" type="submit">Submit Survey</button>
+
         </form>
+<!--End of form-->
         <span id="work-responses">
           <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-        </span>
-      </div>
-<!--first form-->
-      <div id="transportation_survey2">
-        <p>What modes of transportation do you use for extra carricular activities</p>
-        <form id="transportation_survey2a">
-          <div class="form-group">
-            <p>In the past year, I have used the following modes of transportation to travel to recreate:</p>
-            <input type="checkbox" name="rec-transportation" value="bike"> Riding a bike.<br>
-            <input type="checkbox" name="rec-transportation" value="walk">Walking.<br>
-            <input type="checkbox" name="rec-transportation" value="bus">Riding the bus.<br>
-            <input type="checkbox" name="rec-transportation" value="train">Riding the train.<br>
-            <input type="checkbox" name="rec-transportation" value="streetcar">Riding the streetcar.<br>
-            <input type="checkbox" name="rec-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-            <input type="checkbox" name="rec-transportation" value="skateboard">Skateboarding.<br>
-            <input type="checkbox" name="rec-transportation" value="other">Another mode of transportation not listed here.<br>
-          </div>
-          <button class ="btn2" type="submit">Submit Survey</button>
-        </form>
-        <span id="rec-responses">
-          <p><b>You use the following methods of transportation to travel to recreate:</b></p>
         </span>
       </div>
     </div>
